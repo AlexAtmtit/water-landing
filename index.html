@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" class="bg-background">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#edf3f5">
-  <meta name="description" content="ТИШЬ — тишина, ставшая водой. Дизайн-концепция премиальной ледниковой воды. История льда, времени и простых вещей.">
+  <meta name="theme-color" content="#f8faf9">
+  <meta name="description" content="ТИШЬ — тишина, ставшая водой. Дизайн-концепция: прозрачное стекло, северный свет и искусство простых вещей.">
   <meta property="og:title" content="ТИШЬ — тишина, ставшая водой">
-  <meta property="og:description" content="Некоторые вещи не стоит торопить. Концепция ледниковой воды ТИШЬ.">
+  <meta property="og:description" content="Прозрачное стекло. Северный свет. Ничего лишнего. Дизайн-концепция ледниковой воды.">
   <meta property="og:type" content="website">
   <title>ТИШЬ — тишина, ставшая водой</title>
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
@@ -14,71 +14,62 @@
   <link rel="stylesheet" href="./styles.css">
   <script type="module" src="./script.js"></script>
 </head>
-<body>
+<body class="font-sans">
 <a class="skip-link" href="#story">Перейти к истории</a>
 <header class="header" id="top">
-  <a class="wordmark" href="#top" aria-label="ТИШЬ — в начало">тишь<span class="brand-dot">°</span></a>
-  <nav aria-label="Основная навигация"><a href="#story">История</a><a href="#alchemy">Превращение</a><a href="#bottle">Бутылка</a></nav>
-  <span class="header-note">ЛЕДНИКОВАЯ ВОДА</span>
+  <a class="wordmark font-serif" href="#top" aria-label="ТИШЬ — в начало">тишь<span class="brand-dot">°</span></a>
+  <nav aria-label="Основная навигация"><a href="#story">История</a><a href="#alchemy">Замысел</a><a href="#bottle">Бутылка</a></nav>
+  <a class="header-note" href="#ritual">Искусство простого <span class="link-arrow" aria-hidden="true"></span></a>
 </header>
 <main>
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-art">
-      <img class="hero-photo" src="./assets/images/hero.webp" srcset="./assets/images/hero-small.webp 768w, ./assets/images/hero.webp 1536w" sizes="(max-width: 700px) 115vw, 100vw" width="1536" height="1024" alt="Прозрачная бутылка с серебристой крышкой на ледяной скале среди северных гор" fetchpriority="high">
-      <div class="bottle-label hero-label" aria-hidden="true"><span>тишь</span><i></i><small>ЛЕДНИКОВАЯ ВОДА</small></div>
-    </div>
-    <div class="hero-wash"></div>
     <div class="hero-copy">
-      <p class="eyebrow"><span class="tiny-star">✳</span> РОЖДЁННАЯ В ТИШИНЕ</p>
-      <h1 id="hero-title">Тишина,<br>ставшая <em>водой.</em></h1>
-      <p class="hero-description">Из глубины ледника — в ваш бокал.<br>Только лёд. Только время. Ничего лишнего.</p>
-      <a class="text-link" href="#story">Открыть историю <span aria-hidden="true">↗</span></a>
+      <p class="eyebrow">Ледниковая вода / Дизайн-концепция</p>
+      <h1 id="hero-title">Тишина,<br>ставшая<br><em>водой.</em></h1>
+      <p class="hero-description">Северный свет. Прозрачное стекло.<br>И мгновение, которое принадлежит вам.</p>
+      <a class="text-link" href="#story">Открыть историю <span class="link-arrow" aria-hidden="true"></span></a>
     </div>
-    <div class="ice ice-hero" aria-hidden="true"><img src="./assets/images/shard1.webp" alt="" width="600" height="400"></div>
-    <div class="ice ice-hero-right" aria-hidden="true"><img src="./assets/images/shard3.webp" alt="" width="600" height="400"></div>
-    <div class="ice ice-hero-small" aria-hidden="true"><img src="./assets/images/shard2.webp" alt="" width="600" height="400"></div>
-    <div class="hero-glint" aria-hidden="true"></div>
-    <div class="hero-bottom"><span>ПРИРОДА ЗАДАЁТ РИТМ</span><a href="#story" aria-label="Прокрутить к истории"><span>ЛИСТАЙТЕ МЕДЛЕННО</span><span class="down-arrow" aria-hidden="true">↓</span></a><span>01 — 06</span></div>
+    <div class="hero-art">
+      <div class="product-portrait">
+        <img src="./assets/images/product.webp" srcset="./assets/images/product-small.webp 600w, ./assets/images/product.webp 1024w" sizes="(max-width: 700px) 100vw, 50vw" width="1024" height="1536" alt="Бутылка ТИШЬ в северном свете: прозрачное стекло и серебристая крышка" fetchpriority="high">
+        <div class="bottle-label" aria-hidden="true"><span>тишь</span><small>ЛЕДНИКОВАЯ ВОДА</small></div>
+      </div>
+      <span class="image-caption">Прозрачность как характер.</span>
+    </div>
+    <a class="hero-scroll" href="#story"><span aria-hidden="true">↓</span> Без спешки. Вниз по странице.</a>
   </section>
 
   <section class="origin section-pad" id="story" aria-labelledby="origin-title">
-    <div class="section-heading reveal"><p class="eyebrow">01 / ПРОИСХОЖДЕНИЕ</p><h2 id="origin-title">Там, где время<br>принадлежит <em>природе.</em></h2><div class="intro-copy"><p>Далеко за пределами привычного шума есть мир, в котором ничего не нужно ускорять.</p><p>Здесь снег становится льдом, а тишина обретает глубину. С этого воображаемого северного пейзажа начинается история ТИШЬ.</p></div></div>
-    <div class="glacier-journey">
-      <figure class="glacier-frame" aria-label="Погружение в северный пейзаж">
-        <div class="glacier-visual">
-          <img class="glacier-photo" src="./assets/images/glacier.webp" srcset="./assets/images/glacier-small.webp 768w, ./assets/images/glacier.webp 1536w" sizes="100vw" width="1536" height="1024" loading="lazy" alt="Голубые стены ледника отражаются в неподвижной северной воде">
-          <div class="glacier-vignette" aria-hidden="true"></div>
-          <div class="glacier-light" aria-hidden="true"></div>
-        </div>
-        <div class="scene-copy"><p class="eyebrow">СЕВЕР. ТОЛЬКО ВЫ И ПРИРОДА.</p><p class="scene-title">Услышать<br><em>безмолвие.</em></p></div>
-        <div class="ice ice-origin" aria-hidden="true"><img src="./assets/images/shard2.webp" width="600" height="400" loading="lazy" alt=""></div>
-        <div class="ice ice-origin-front" aria-hidden="true"><img src="./assets/images/shard1.webp" width="600" height="400" loading="lazy" alt=""></div>
-        <div class="ice ice-origin-small" aria-hidden="true"><img src="./assets/images/shard3.webp" width="600" height="400" loading="lazy" alt=""></div>
-        <figcaption><span>ДАЛЕКО ОТ СУЕТЫ</span><span>БЛИЗКО К ПЕРВОЗДАННОМУ</span></figcaption>
-      </figure>
+    <div class="section-heading reveal">
+      <div><p class="eyebrow">История ТИШЬ</p><h2 id="origin-title">У каждого начала<br>есть свой <em>пейзаж.</em></h2></div>
+      <div class="intro-copy"><p>У нашего — северный. Неподвижная вода, глубокий лёд и свет, которому не нужны украшения.</p><p>Этот воображаемый пейзаж стал отправной точкой ТИШЬ — концепции воды и предмета вокруг неё.</p></div>
     </div>
   </section>
+  <figure class="glacier-frame" aria-label="Северный пейзаж">
+    <img class="glacier-photo" src="./assets/images/glacier.webp" srcset="./assets/images/glacier-small.webp 768w, ./assets/images/glacier.webp 1536w" sizes="100vw" width="1536" height="1024" loading="lazy" alt="Голубые стены ледника отражаются в неподвижной северной воде">
+    <div class="scene-copy"><p class="eyebrow">Вдали от лишнего</p><p class="scene-title font-serif">Природа.<br>Без дополнений.</p></div>
+    <figcaption>Пейзаж, с которого начинается идея.</figcaption>
+  </figure>
 
   <section class="alchemy section-pad" id="alchemy" aria-labelledby="alchemy-title">
-    <div class="alchemy-heading reveal"><p class="eyebrow">02 / ПРЕВРАЩЕНИЕ</p><h2 id="alchemy-title">Некоторые вещи<br>не стоит <em>торопить.</em></h2><p>Мы придумали воду, путь которой начинается со льда.<br>Единственное, что нужно для превращения, — время.</p></div>
+    <div class="alchemy-heading reveal"><p class="eyebrow">Замысел</p><h2 id="alchemy-title">Не добавлять.<br><em>Оставлять главное.</em></h2><p>Три опоры визуального языка ТИШЬ.<br>От северного пейзажа — к предмету в руках.</p></div>
     <div class="stages">
-      <article class="stage reveal"><div class="stage-image"><img src="./assets/images/macro.webp" srcset="./assets/images/macro-small.webp 768w, ./assets/images/macro.webp 1536w" sizes="(max-width: 700px) 90vw, 29vw" width="1536" height="1024" loading="lazy" alt="Прозрачные грани ледникового льда с маленькими пузырьками воздуха"></div><div class="stage-title"><span>01</span><h3>Сохранить мгновение</h3></div><p>Ледниковый лёд. В его прозрачных гранях — северный свет и застывшее движение.</p></article>
-      <article class="stage reveal"><div class="stage-image"><img src="./assets/images/melting.webp" srcset="./assets/images/melting-small.webp 768w, ./assets/images/melting.webp 1536w" sizes="(max-width: 700px) 90vw, 29vw" width="1536" height="1024" loading="lazy" alt="Кусочки льда медленно тают внутри стеклянной бутылки"></div><div class="stage-title"><span>02</span><h3>Позволить случиться</h3></div><p>Лёд помещают в бутылку. Он медленно тает, меняя форму и оставаясь собой.</p></article>
-      <article class="stage reveal"><div class="stage-image stage-water"><img src="./assets/images/product.webp" width="1024" height="1536" loading="lazy" alt="Чистая вода в прозрачной бутылке"><span class="water-caption" aria-hidden="true">тишь</span></div><div class="stage-title"><span>03</span><h3>Почувствовать простое</h3></div><p>Лёд становится водой. Остаётся наполнить бокал — и на мгновение остановиться.</p></article>
+      <article class="stage reveal"><div class="stage-image"><img src="./assets/images/macro.webp" srcset="./assets/images/macro-small.webp 768w, ./assets/images/macro.webp 1536w" sizes="(max-width: 700px) 90vw, 40vw" width="1536" height="1024" loading="lazy" alt="Прозрачные грани льда с тонкими пузырьками воздуха"></div><h3>Фактура льда</h3><p>Неидеальные грани и глубина голубого. Живая фактура вместо орнамента.</p></article>
+      <article class="stage stage-detail reveal"><div class="stage-image"><img src="./assets/images/product.webp" width="1024" height="1536" loading="lazy" alt="Крупная деталь бутылки: серебристая крышка и плавный переход в прозрачное стекло"></div><h3>Точность формы</h3><p>Плавные плечи, серебристая крышка. Только линии, у которых есть назначение.</p></article>
+      <article class="stage stage-light reveal"><div class="stage-image"><img src="./assets/images/melting.webp" srcset="./assets/images/melting-small.webp 768w, ./assets/images/melting.webp 1536w" sizes="(max-width: 700px) 90vw, 40vw" width="1536" height="1024" loading="lazy" alt="Свет проходит через лёд и прозрачное стекло"></div><h3>Работа света</h3><p>Вместо цвета — отражение. Вместо декора — свет, проходящий сквозь стекло.</p></article>
     </div>
-    <p class="alchemy-footnote">ЛЁД <span aria-hidden="true">────────</span> ВРЕМЯ <span aria-hidden="true">────────</span> ВОДА</p>
   </section>
 
   <section class="bottle-section" id="bottle" aria-labelledby="bottle-title">
-    <div class="product-image reveal"><img src="./assets/images/product.webp" srcset="./assets/images/product-small.webp 600w, ./assets/images/product.webp 1024w" sizes="(max-width: 700px) 100vw, 50vw" width="1024" height="1536" loading="lazy" alt="Бутылка ТИШЬ: прозрачное стекло, плавные плечи и серебристая крышка"><div class="bottle-label product-label" aria-hidden="true"><span>тишь</span><i></i><small>ЛЕДНИКОВАЯ ВОДА</small></div><span class="product-caption">ФОРМА, КОТОРАЯ НЕ ОТВЛЕКАЕТ</span></div>
-    <div class="bottle-copy reveal"><p class="eyebrow">03 / ОБЪЕКТ</p><h2 id="bottle-title">Ничего лишнего.<br>Даже в <em>форме.</em></h2><p>Прозрачное стекло не скрывает главное.<br>Серебро напоминает о холоде.<br>Каждая линия оставляет место воде.</p><dl><div><dt>Материал</dt><dd>Прозрачное стекло</dd></div><div><dt>Деталь</dt><dd>Серебристая крышка</dd></div><div><dt>Характер</dt><dd>Сдержанный. Северный.</dd></div></dl><a class="text-link view-bottle" href="./assets/images/product.webp">Рассмотреть ближе <span aria-hidden="true">↗</span></a></div>
+    <div class="product-image"><div class="product-portrait"><img src="./assets/images/product.webp" srcset="./assets/images/product-small.webp 600w, ./assets/images/product.webp 1024w" sizes="(max-width: 700px) 100vw, 50vw" width="1024" height="1536" loading="lazy" alt="Полный вид бутылки ТИШЬ с лаконичной надписью на стекле"><div class="bottle-label" aria-hidden="true"><span>тишь</span><small>ЛЕДНИКОВАЯ ВОДА</small></div></div></div>
+    <div class="bottle-copy reveal"><p class="eyebrow">Объект</p><h2 id="bottle-title">Форма тишины.</h2><p>Бутылка не перетягивает внимание.<br>Она оставляет место тому, что внутри.</p><dl><div><dt>Материал</dt><dd>Прозрачное стекло</dd></div><div><dt>Акцент</dt><dd>Серебристая крышка</dd></div><div><dt>Подпись</dt><dd>Одно слово. Без лишнего.</dd></div></dl><a class="text-link view-bottle" href="./assets/images/product.webp">Рассмотреть ближе <span class="link-arrow" aria-hidden="true"></span></a></div>
   </section>
 
-  <section class="ritual section-pad" id="ritual" aria-labelledby="ritual-title"><div class="ritual-copy reveal"><p class="eyebrow">04 / РИТУАЛ</p><h2 id="ritual-title">Оставьте место<br>для <em>тишины.</em></h2><p>Тонкое стекло. Мягкий свет.<br>Разговор, которому не нужны слова.<br>Роскошь — быть здесь.</p></div><figure class="ritual-image reveal"><img src="./assets/images/ritual.webp" srcset="./assets/images/ritual-small.webp 768w, ./assets/images/ritual.webp 1536w" sizes="(max-width: 700px) 90vw, 55vw" width="1536" height="1024" loading="lazy" alt="Бутылка воды и тонкий бокал на светлом камне в мягком свете"><div class="bottle-label ritual-label" aria-hidden="true"><span>тишь</span></div><figcaption>ВАШ МАЛЕНЬКИЙ РИТУАЛ ПРИСУТСТВИЯ</figcaption></figure></section>
+  <section class="ritual section-pad" id="ritual" aria-labelledby="ritual-title"><div class="ritual-copy reveal"><p class="eyebrow">Личный ритуал</p><h2 id="ritual-title">Не ещё одна вещь.<br><em>Маленькая пауза.</em></h2><p>Убрать телефон. Наполнить бокал.<br>Вернуться в настоящий момент.</p></div><figure class="ritual-image reveal"><img src="./assets/images/ritual.webp" srcset="./assets/images/ritual-small.webp 768w, ./assets/images/ritual.webp 1536w" sizes="(max-width: 700px) 100vw, 55vw" width="1536" height="1024" loading="lazy" alt="Тонкий бокал и стеклянная бутылка на светлом камне"><figcaption>Для моментов, в которых достаточно просто быть.</figcaption></figure></section>
 
-  <section class="finale" aria-labelledby="final-title"><div class="ice ice-finale" aria-hidden="true"><img src="./assets/images/shard3.webp" width="600" height="400" alt="" loading="lazy"></div><div class="finale-content reveal"><p class="eyebrow">ИЗО ЛЬДА. ВНЕ СУЕТЫ.</p><span class="final-wordmark" aria-hidden="true">тишь</span><h2 id="final-title">Тишина, ставшая водой.</h2><a class="text-link view-bottle" href="./assets/images/product.webp">Рассмотреть бутылку <span aria-hidden="true">↗</span></a></div></section>
+  <section class="finale" aria-labelledby="final-title"><div class="finale-content reveal"><p class="eyebrow">Искусство простого</p><h2 id="final-title" class="final-wordmark">тишь</h2><p>Оставьте место для себя.</p><a class="text-link view-bottle" href="./assets/images/product.webp">Знакомство в деталях <span class="link-arrow" aria-hidden="true"></span></a></div></section>
 </main>
-<footer><a class="wordmark" href="#top" aria-label="ТИШЬ — в начало">тишь<span class="brand-dot">°</span></a><p>Вымышленный бренд. Дизайн-концепция.</p><a class="back-top" href="#top">Наверх <span aria-hidden="true">↑</span></a></footer>
-<dialog id="bottle-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Закрыть изображение">✕</button><div class="dialog-layout"><div class="dialog-product"><img src="./assets/images/product.webp" width="1024" height="1536" loading="lazy" alt="Увеличенный вид прозрачной бутылки ТИШЬ"><div class="bottle-label product-label" aria-hidden="true"><span>тишь</span><i></i><small>ЛЕДНИКОВАЯ ВОДА</small></div></div><div class="dialog-copy"><p class="eyebrow">ТИШЬ / В ДЕТАЛЯХ</p><h2 id="dialog-title">Простота.<br>В каждой линии.</h2><p>Мягкие плечи, тяжёлое стеклянное дно и серебристая крышка. Форма, созданная для света и воды.</p><p class="dialog-note">Концептуальный дизайн бутылки.</p></div></div></dialog>
+<footer><a class="wordmark font-serif" href="#top" aria-label="ТИШЬ — в начало">тишь<span class="brand-dot">°</span></a><p>Вымышленный бренд. Дизайн-концепция.</p><a class="back-top" href="#top">Наверх <span aria-hidden="true">↑</span></a></footer>
+<dialog id="bottle-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Закрыть изображение">×</button><div class="dialog-layout"><div class="dialog-product product-portrait"><img src="./assets/images/product.webp" width="1024" height="1536" loading="lazy" alt="Увеличенный вид бутылки ТИШЬ"><div class="bottle-label" aria-hidden="true"><span>тишь</span><small>ЛЕДНИКОВАЯ ВОДА</small></div></div><div class="dialog-copy"><p class="eyebrow">В деталях</p><h2 id="dialog-title">Простота.<br>В каждой линии.</h2><p>Мягкие плечи, тяжёлое стеклянное дно и серебристая крышка. Форма, созданная для света и воды.</p><p class="dialog-note">Концептуальный дизайн бутылки.</p></div></div></dialog>
 </body>
 </html>
