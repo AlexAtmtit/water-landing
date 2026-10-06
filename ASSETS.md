@@ -21,3 +21,7 @@
 ## Шрифты
 
 Cormorant Garamond и Manrope получены из официального Google Fonts, размещены локально. Лицензии приложены в `assets/fonts/`. Сайт не обращается к Google Fonts во время работы.
+
+## Прозрачная бутылка
+
+`assets/images/product-cutout.png` — RGBA 1024 × 1536, обработана встроенным ImageGen на основе `product.webp`. Прозрачность сохраняется вокруг бутылки и внутри стекла; крышка и блики сохранены. Используется в первом экране и тёмном разделе. Промпт: `assets/images/product-cutout.prompt.txt`.
