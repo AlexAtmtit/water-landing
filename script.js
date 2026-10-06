@@ -64,3 +64,42 @@ function outside(event) {
 dialog.addEventListener('pointerdown', event => { startedOnBackdrop = outside(event); });
 dialog.addEventListener('click', event => { if (startedOnBackdrop && outside(event)) dialog.close(); startedOnBackdrop = false; });
 dialog.addEventListener('close', () => { document.body.classList.remove('modal-open'); opener?.focus({ preventScroll: true }); });
+
+// Typeface choices affect this browser only; all options work without network requests.
+const fontFamilies = {
+  system: "-apple-system, BlinkMacSystemFont, 'Manrope', 'Segoe UI', sans-serif",
+  cormorant: "'Cormorant Garamond', Georgia, serif",
+  georgia: 'Georgia, serif',
+  times: "'Times New Roman', Times, serif",
+  manrope: 'Manrope, Arial, sans-serif',
+  arial: 'Arial, sans-serif'
+};
+const headingFont = document.querySelector('#heading-font');
+const bodyFont = document.querySelector('#body-font');
+const fontPicker = document.querySelector('#font-picker');
+function applyFonts() {
+  document.documentElement.style.setProperty('--serif', fontFamilies[headingFont.value]);
+  document.documentElement.style.setProperty('--font-sans', fontFamilies[bodyFont.value]);
+  document.documentElement.dataset.headingFont = headingFont.value;
+}
+function saveFonts() {
+  applyFonts();
+  try { localStorage.setItem('tish-font-preview', JSON.stringify({ heading: headingFont.value, body: bodyFont.value })); } catch { /* Preview remains available when storage is blocked. */ }
+}
+try {
+  const saved = JSON.parse(localStorage.getItem('tish-font-preview') || 'null');
+  if (saved && [...headingFont.options].some(option => option.value === saved.heading)) headingFont.value = saved.heading;
+  if (saved && [...bodyFont.options].some(option => option.value === saved.body)) bodyFont.value = saved.body;
+} catch { /* Ignore unavailable storage or an outdated saved choice. */ }
+applyFonts();
+headingFont.addEventListener('change', saveFonts);
+bodyFont.addEventListener('change', saveFonts);
+document.querySelector('#font-reset').addEventListener('click', () => {
+  headingFont.value = 'system'; bodyFont.value = 'system'; saveFonts();
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && fontPicker.open) { fontPicker.open = false; fontPicker.querySelector('summary').focus(); }
+});
+document.addEventListener('click', event => {
+  if (fontPicker.open && !fontPicker.contains(event.target)) fontPicker.open = false;
+});

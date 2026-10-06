@@ -11,3 +11,16 @@ dialog { border:0; border-radius:18px; padding:48px; width:min(880px,calc(100% -
 @media(max-width:640px) { html { scroll-padding-top:68px; } h1 { font-size:34px; } h2 { font-size:34px; } .tile-heading { padding-top:48px; } .tagline { font-size:21px; } .hero .tile-heading { padding-top:40px; } .hero-product { width:280px; height:350px; margin-top:24px; } .story-copy { font-size:19px; } .story-copy br { display:none; } .detail-layout { grid-template-columns:1fr; padding:0 24px 48px; margin-top:24px; gap:24px; } .detail-image { height:320px; } .detail-copy { align-items:center; text-align:center; gap:24px; } .detail-copy .inline-link { align-self:center; } #detail-panel { min-height:155px; } .landscape { height:380px; } .twin-tiles .tile-heading { padding-top:40px; } .twin-tiles img { height:300px; } .closing { padding-bottom:56px; } .dialog-layout { grid-template-columns:1fr; gap:24px; } dialog { padding:48px 24px 32px; } .dialog-product { height:280px; } .dialog-copy h2 { font-size:28px; } .footer-links { flex-direction:column; align-items:flex-start; gap:12px; } }
 @media(max-width:419px) { h1 { font-size:28px; } .actions { gap:12px; } .button { padding:10px 18px; font-size:16px; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } }
+
+/* Local type preview controls keep their own stable UI typography. */
+.font-picker{position:fixed;right:22px;bottom:22px;z-index:30;font:12px/1.5 Manrope,Arial,sans-serif;color:#e9efec}
+.font-picker summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:12px 18px;background:#183238;border:1px solid #76918c66;border-radius:28px;box-shadow:0 4px 22px #10272d26;min-height:44px}
+.font-picker summary::-webkit-details-marker{display:none}.font-picker summary>span{font-family:Georgia,serif;font-size:21px}
+.font-picker-panel{position:absolute;right:0;bottom:62px;width:310px;max-width:calc(100vw - 32px);padding:24px;background:#f5f6f2;color:#263d46;border:1px solid #c9d5d0;border-radius:16px;box-shadow:0 15px 55px #10272d38;max-height:calc(100svh - 100px);overflow:auto}
+.font-picker-title{font:500 16px/1.4 Manrope,Arial,sans-serif;margin-bottom:6px}.font-picker-hint{font-size:11px;color:#5d716f;margin:8px 0 16px}
+.font-picker label{display:block;font-weight:500;margin:16px 0 7px}.font-picker select{display:block;width:100%;min-height:44px;font:12px Manrope,Arial,sans-serif;color:#263d46;background:#fff;border:1px solid #bdcbc6;border-radius:6px;padding:10px 6px}
+.font-picker button{width:100%;background:none;border:1px solid #bdcbc6;border-radius:6px;padding:11px;cursor:pointer;font:12px Manrope,Arial,sans-serif;color:#263d46}
+.font-picker :is(summary,select,button):focus-visible{outline:2px solid #749e97;outline-offset:4px}
+@media(max-width:580px){.font-picker{right:16px;bottom:16px}.font-picker summary{padding:9px 15px}}
+
+:root{--serif:var(--font-sans)}h1,h2,h3,.brand,.product-name,.product-label strong{font-family:var(--serif)}
